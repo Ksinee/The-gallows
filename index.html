@@ -1,1 +1,62 @@
-
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" type="text/css"/> 
+    <script type="text/javascript" src=""></script>
+  </head>
+  <body>
+    <div id="rulesBlock">
+      <p>Добро пожаловать в игру "Виселица"</br></br>Суть этой игры состоит в том, чтобы угадать слово, которое было загадано компьютером</br></br>Используйте кнопки на экране, чтобы выбрать букву, которая, как Вы считаете, есть в загаданном слове</br></br>С каждой неправильно угаданной буквой количество Ваших сердец уменьшается, а истратив их все - Вы проиграете</br></br>Угадайте слово, чтобы победить</br></br>Удачи!</p>
+<button id="play">Играть</button>
+    </div>
+    <div id="gameBlock">
+      <h2>Здесь находится количество попыток</h2>
+      <h1>Здесь находится загаданное слово</h1>
+      <canvas id="canvas" width="100" height="100"></canvas>
+      <div id="buttons">
+        <button id="й">й</button>
+        <button id="ц">ц</button>
+        <button id="у">у</button>
+        <button id="к">к</button>
+        <button id="е">е</button>
+        <button id="н">н</button>
+        <button id="г">г</button>
+        <button id="ш">ш</button>
+        <button id="щ">щ</button>
+		<button id="з">з</button>
+        <button id="х">х</button>
+		<button id="ъ">ъ</button>
+        </br>
+        <button id="ф">ф</button>
+        <button id="ы">ы</button>
+        <button id="в">в</button>
+        <button id="а">а</button>
+        <button id="п">п</button>
+        <button id="р">р</button>
+        <button id="о">о</button>
+        <button id="л">л</button>
+		<button id="д">д</button>
+        <button id="ж">ж</button>
+		<button id="э">э</button>
+        </br>
+        <button id="я">я</button>
+        <button id="ч">ч</button>
+        <button id="с">с</button>
+        <button id="м">м</button>
+        <button id="и">и</button>
+        <button id="т">т</button>
+        <button id="ь">ь</button>
+        <button id="б">б</button>
+		<button id="ю">ю</button>
+		<button id="ё">ё</button>
+      </div>
+    </div>
+    <div id="looseBlock">
+      <p>К сожалению Вам не удалось отгадать это слово. Однако не стоит отчаиваться! В следующий раз Вы обязательно справитесь!</br></br>Было загаданно слово</br></br><span id="looseMessage"></span></p>
+    </div>
+    <div id="winBlock">
+      <p>Поздравляю! Вы с лёгкостью справились и совершенно верно угадали слово</br></br>Ведь и в правду было загадано слово</br></br><span id="winMessage"></span></p>
+    </div>
+	<script type='text/javascript' src='script.js'></script> 
+  </body>
+</html>
