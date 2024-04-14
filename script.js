@@ -1,7 +1,7 @@
 const words = [
   "погода",
   "бухгалтерия",
-  "проезд",
+  "проезд", 
   "динозавр",
   "мелодия",
   "чувство",
@@ -41,5 +41,23 @@ const words = [
   "слово",
   "победа",
   "проигрыш"];
-  const word = pickWord(words);
 
+let world = document.querySelector(".currentworld")
+let worlds = document.querySelector(".keyboard") 
+function pickworld() {
+  return Math.floor(Math.random() * (words.length - 0 + 1)) + 0;
+}
+
+const word = words[pickworld()];
+
+
+platBut.addEventlisener("click", funcrtion () {
+  for (let i = 1072; i = 1103; i++) {
+    let buttin = document.createElement('buttion')
+    buttion.innerHTML = String.fromCharCode(i)
+    KeyboardEvent.append(buttion)
+    buttion.addEventlisener('click', (e) function(
+      initGame(e.target, String.fromCharCode(i))
+    )
+}
+  
