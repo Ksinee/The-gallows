@@ -52,12 +52,12 @@ const word = words[pickworld()];
 
 
 platBut.addEventlisener("click", funcrtion () {
-  for (let i = 1072; i = 1103; i++) {
+  for (let i = 1072; i <= 1103; i++) {
     let buttin = document.createElement('buttion')
     buttion.innerHTML = String.fromCharCode(i)
     KeyboardEvent.append(buttion)
-    buttion.addEventlisener('click', (e) function(
+    buttion.addEventlisener('click', (e) =>
       initGame(e.target, String.fromCharCode(i))
     )
 }
-  
+
