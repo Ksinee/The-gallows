@@ -1,29 +1,21 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel = "stylesheet" href = "style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Hangman</title>
+	<title>Виселица</title>
 	<script type="text/javascript" src="hangman.js"></script>
 </head>
 
-<body onload="startGame(turnCount, answerArray)">
+<body>
+
 	<h1>Виселица</h1>
-	<div id="displayStatus"></div>
-	<div id="interactWithPlayer">
-		<div>
-			<div id='showAlreadyUsedLetters'></div>
-		</div>
-		<label for="guessOfPlayer">
-			<input id="guessOfPlayer" type="text" maxlength="1">
-		</label>
-		<br>
-		<button id="confirmActions" onclick="confirmActions(word, answerArray)">продолжить</button>
-	</div>
-	<div>
-		<button id="restartGame" onClick="window.location.reload()">рейтинг слов</button>
-	</div>
+
+		<button>играть</button>
+	<div class = 'Currentword'></div> 
+	<div class = 'keyboard'></div>
+
+	<script src="script.js"></script>
 </body>
-<script type="text/javascript" src="hangman.js"></script>
-</html>
