@@ -60,4 +60,10 @@ platBut.addEventlisener("click", funcrtion () {
       initGame(e.target, String.fromCharCode(i))
     )
 }
+  for (let i = 0; i < currentWord.length; i ++) {
+    word.innerHTML += "_"
+  }
+  playBut.style.display = "none"
+  game.style.display = "flex"
+})
 
