@@ -1,3 +1,5 @@
+
+
 const words = [
   "погода",
   "бухгалтерия",
@@ -50,6 +52,35 @@ function pickworld() {
 
 const word = words[pickworld()];
 
+let mistakes = 0
+let currentWord = "привет"
+
+function checkLetter(button, clickedLetter) {
+	if (currentWord.includes(clickedLetter)) {
+		// Replace all occurrences of the letter in the word
+		let wordText = word.textContent
+		let newWordText = ""
+		for (let i = 0; i < currentWord.length; i++) {
+			if (currentWord[i] === clickedLetter) {
+				newWordText += clickedLetter
+			} else {
+				newWordText += wordText[i]
+			}
+			console.log(newWordText)
+		}
+		word.textContent = newWordText
+		if (newWordText === currentWord) {
+			alert("You win!")
+		}
+	} else {
+		mistakes++
+		console.log("Mistakes: " + mistakes)
+		if (mistakes == 5) {
+			alert("you LOSE!!!")
+		}
+	}
+	button.disabled = true
+}
 
 platBut.addEventlisener("click", funcrtion () {
   for (let i = 1072; i <= 1103; i++) {
