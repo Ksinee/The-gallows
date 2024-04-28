@@ -82,9 +82,9 @@ function checkLetter(button, clickedLetter) {
 	button.disabled = true
 }
 
-platBut.addEventlisener("click", funcrtion () {
+platBut.addEventlisener("click", function () {
   for (let i = 1072; i <= 1103; i++) {
-    let buttin = document.createElement('buttion')
+    let buttion = document.createElement('buttion')
     buttion.innerHTML = String.fromCharCode(i)
     KeyboardEvent.append(buttion)
     buttion.addEventlisener('click', (e) =>
